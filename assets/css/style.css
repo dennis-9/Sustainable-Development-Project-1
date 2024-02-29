@@ -43,10 +43,7 @@ body {
 }
 
 
-/* Additional Styling and Effects */
-
-
-/* Video Styles */
+/* bg Video Styles */
 
 .bg-video {
     position: fixed;
@@ -86,7 +83,7 @@ body {
 }
 
 
-/* Style the about-section */
+/* about-section */
 
 #about-section h2 {
     color: #28a745;
@@ -119,9 +116,6 @@ video {
     border-color: #218838;
 }
 
-
-/* Add transition effect to images */
-
 img {
     transition: transform 0.3s ease-in-out;
 }
@@ -134,5 +128,4 @@ img:hover {
     .container {
         padding: 15px;
     }
-    /* Adjust other styles for smaller screens */
 }
