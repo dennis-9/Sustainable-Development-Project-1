@@ -3,13 +3,29 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background-color: #218838;
-    color: #fff;
-    padding: 20px 0;
     text-align: center;
+    display: grid;
+    font-size: 2.5em;
+    color: #28a745;
+    /* Green color */
+    font-weight: 500;
+    text-shadow: 2px 2px 2px #008800, 5px 5px 5px #888888;
+    /* Multiple shadows for a layered effect */
+    transform: rotate(-5deg);
+    /* Rotate the text slightly */
+    transition: transform 0.9s ease-in-out;
+    /* Add a smooth transition effect on hover */
+    cursor: pointer;
+    /* Change cursor on hover */
+}
+
+h1:hover {
+    transform: rotate(5deg);
+    /* Adjust the rotation on hover */
 }
 
 section {
@@ -26,6 +42,14 @@ article {
 
 video {
     max-width: 100%;
+    height: auto;
+}
+
+
+/* Add a style for the article images */
+
+.article-image {
+    max-width: 200px;
     height: auto;
 }
 
