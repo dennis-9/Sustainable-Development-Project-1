@@ -266,7 +266,7 @@
     }
     
     .carousel :where(.card,
-    .img) {
+    .img-effect) {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -283,14 +283,14 @@
         border-radius: 8px;
     }
     
-    .carousel .card .img {
+    .carousel .card .img-effect {
         background: #039444;
         height: 148px;
         width: 148px;
         border-radius: 50%;
     }
     
-    .card .img img {
+    .card .img-effect img {
         width: 140px;
         height: 140px;
         border-radius: 50%;
@@ -312,6 +312,42 @@
         font-family: Poppins;
     }
     
+    .card {
+        /* Set a fixed height for the card body to ensure uniformity */
+        height: 100%;
+        /* Ensure the card fills the column height */
+    }
+    
+    .card-img-top {
+        /* Ensure the image inside the card maintains its aspect ratio */
+        object-fit: cover;
+        /* Cover the entire space allocated for the image */
+        height: 200px;
+        /* Set a fixed height for the card image */
+    }
+    
+    .card-body {
+        /* Set a fixed height for the card body */
+        height: 100%;
+        /* Ensure the card body fills the card height */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .card-title {
+        /* Optional: Style the card title */
+        font-size: 1.25rem;
+        /* Adjust font size as needed */
+        font-weight: bold;
+        /* Optionally make the title bold */
+    }
+    
+    .card-text {
+        /* Optional: Style the card text */
+        flex-grow: 1;
+        /* Allow the text to grow vertically within the card body */
+    }
+    
     .footer {
         background-color: #039444;
         color: #2b2424;
@@ -322,6 +358,16 @@
         margin-top: 80px;
         padding: 20px;
         border-radius: 8px;
+    }
+    /* Define gradient button */
+    
+    .btn-gradient {
+        background-image: linear-gradient(to right, #039444, #febe37);
+        /* Gradient background */
+        color: #ffffff;
+        /* Text color */
+        border-color: #ffffff;
+        /* Border color */
     }
     /* bg Video Styles */
     
@@ -375,11 +421,11 @@
         border-color: #039444;
     }
     
-    img {
+    .img-effect {
         transition: transform 0.3s ease-in-out;
     }
     
-    img:hover {
+    .img-effect:hover {
         transform: scale(1.1);
     }
     
