@@ -1,9 +1,7 @@
 document.getElementById("Title").innerHTML = "EnviroClean";
 document.getElementById("Company").innerHTML = "Discover The Way To Get More Ideas To Prevent Waste.";
-document.getElementById("Intro").innerHTML = "Hello there! Welcome to our website, <b>ENVIROCLEAN!</b> We are a group of aspiring students and people looking to do our part in cleansing the world of environmental issues. We have created a website that contains common problems in our environment, such as and <b> waste mismanagement</b>. <br> <br> Not only will we show the environmental issues that plague our planet, but we will also provide ways to prevent and decrease the impact of these problems. Join us as we embark on a journey to sustain our planet, and rid the world of these environmental issues like Waste.";
+document.getElementById("Intro").innerHTML = "Hello there! Welcome to our website, <b>ENVIROCLEAN!</b> <br>We are a group of aspiring students and people looking to do our part in cleansing the world of environmental issues.<br> We have created a website that contains common problems in our environment, such as and <b> waste mismanagement</b>. <br> <br> ";
 document.getElementById("IntroTitle").innerHTML = "LEAF THE ENVIRONMENT SAFE!";
-document.getElementById("IntroTitleSmall").innerHTML = "A Small Intro";
-document.getElementById("Content").innerHTML = "";
 
 
 

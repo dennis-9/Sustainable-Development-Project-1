@@ -1,307 +1,401 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Noto+Serif:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Rowdies:wght@700&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #ffffff;
-    color: #2b2424;
-}
-
-.container {
-    background-color: #ffffff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.navbar {
-    background-color: #08d356a7;
-    min-height: 100px;
-}
-
-.navbar-brand,
-.navbar-nav .nav-link {
-    color: #00d084;
-    transition: color 0.3s ease-in-out;
-}
-
-.navbar-brand:hover,
-.navbar-nav .nav-link:hover {
-    color: #00ff73;
-    background-color: #ffffff;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.EcoEasy {
-    background-image: url("bg2.png");
-    background-size: cover;
-    height: 600px;
-    width: 100.4vw;
-    margin-left: -1vw;
-    margin-top: -34px;
-}
-
-#Title {
-    font-family: Poppins;
-    font-size: 50px;
-    margin-left: 2vw;
-    text-align: left;
-    color: white;
-    margin-top: 30px;
-}
-
-#Company {
-    font-family: Poppins;
-    font-size: 25px;
-    text-align: left;
-    margin-left: 2vw;
-    color: white;
-    margin-top: 20px;
-}
-
-.Search-Bar {
-    width: 100%;
-    max-width: 470px;
-    background: white;
-    display: flex;
-    align-items: center;
-    border-radius: 50px;
-    margin-left: 2vw;
-    margin-top: 50px;
-}
-
-.Search-Bar input {
-    background: transparent;
-    flex: 1;
-    border: 0;
-    outline: none;
-    padding: 10px 20px;
-    font-size: 20px;
-    font-family: Poppins;
-}
-
-.Search-Bar button img {
-    width: 25px;
-}
-
-.Search-Bar button {
-    border: 0;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    background: #47BE00;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.wrapper {
-    max-width: 100vw;
-    width: 100%;
-    position: relative;
-    margin-left: 0.25vw;
-    margin-top: 40px;
-}
-
-.wrapper i {
-    top: 50%;
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-    font-size: 20px;
-    position: absolute;
-    text-align: center;
-    line-height: 50px;
-    background: #fff;
-    border-radius: 50%;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
-    transform: translateY(-50%);
-    transition: transform 0.1s linear;
-}
-
-.wrapper i:active {
-    transform: translateY(-50%) scale(0.85);
-}
-
-.wrapper i:first-child {
-    left: -22px;
-}
-
-.wrapper i:last-child {
-    right: -22px;
-}
-
-.wrapper .carousel {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 3) - 12px);
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 16px;
-    border-radius: 8px;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-}
-
-.carousel::-webkit-scrollbar {
-    display: none;
-}
-
-.carousel.no-transition {
-    scroll-behavior: auto;
-}
-
-.carousel.dragging {
-    scroll-snap-type: none;
-    scroll-behavior: auto;
-}
-
-.carousel.dragging .card {
-    cursor: grab;
-    user-select: none;
-}
-
-.carousel :where(.card,
-.img) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.carousel .card {
-    scroll-snap-align: start;
-    height: 342px;
-    list-style: none;
-    background: #fff;
-    cursor: pointer;
-    padding-bottom: 15px;
-    flex-direction: column;
-    border-radius: 8px;
-}
-
-.carousel .card .img {
-    background: #8B53FF;
-    height: 148px;
-    width: 148px;
-    border-radius: 50%;
-}
-
-.card .img img {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #fff;
-}
-
-.carousel .card h2 {
-    font-weight: 500;
-    font-size: 25px;
-    margin: 30px 0 5px;
-    font-family: Poppins;
-}
-
-.carousel .card span {
-    color: #4cc700;
-    font-size: 12px;
-    text-align: center;
-    font-family: Poppins;
-}
-
-.footer {
-    background-color: #00d084;
-    color: #2b2424;
-    padding: 15px 0;
-}
-
-#about-section {
-    margin-top: 80px;
-    border: 2px solid #00d084;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-
-/* bg Video Styles */
-
-.video-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: -1;
-}
-
-
-/* Content Styles */
-
-#welcome-section {
-    position: relative;
-    text-align: center;
-    padding: 30px 0;
-    color: #ffffff;
-}
-
-#welcome-section .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-
-/* about-section */
-
-#about-section h2 {
-    color: #00d084;
-}
-
-#videos {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-video {
-    width: 100%;
-    height: auto;
-    max-width: 100vw;
-    max-height: 100vh;
-}
-
-
-/* Add hover effect to buttons */
-
-.btn-primary:hover {
-    background-color: #00d084;
-    border-color: #00d084;
-}
-
-.btn-success:hover {
-    background-color: #00ff73;
-    border-color: #00ff73;
-}
-
-img {
-    transition: transform 0.3s ease-in-out;
-}
-
-img:hover {
-    transform: scale(1.1);
-}
-
-@media screen and (max-width: 768px) {
-    .container {
-        padding: 15px;
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Noto+Serif:wght@900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Rowdies:wght@700&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
     }
-}
+    
+    body {
+        font-family: 'Roboto', "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        background-color: #ffffff;
+        color: #2b2424;
+        line-height: 1.5;
+        text-align: left;
+    }
+    
+    .container {
+        background-color: #ffffff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px;
+    }
+    
+    .navbar {
+        background-color: #08d356a7;
+        min-height: 100px;
+    }
+    
+    .navbar-brand,
+    .navbar-nav .nav-link {
+        color: #00d084;
+        transition: color 0.3s ease-in-out;
+    }
+    
+    .navbar-brand:hover,
+    .navbar-nav .nav-link:hover {
+        color: #00ff73;
+        background-color: #ffffff;
+        transition: background-color 0.3s ease-in-out;
+    }
+    
+    .bg-body-tertiary {
+        --bs-bg-opacity: 1;
+        background-color: #febe37 !important;
+    }
+    
+    .EcoEasy {
+        background-image: url("bg3.jpg");
+        background-size: cover;
+        height: 600px;
+        width: 100.4vw;
+        margin-left: -1vw;
+        margin-top: -34px;
+    }
+    
+    #Title {
+        font-family: Poppins;
+        font-size: 50px;
+        margin-left: 2vw;
+        text-align: left;
+        color: #febe37;
+        margin-top: 30px;
+    }
+    
+    #Intro {
+        margin-top: 0;
+        margin-bottom: 0;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        unicode-bidi: isolate;
+        text-align: center;
+    }
+    
+    #IntroTitle {
+        grid-column-gap: 5rem;
+        grid-row-gap: 1rem;
+        flex-direction: column;
+        display: flex;
+        color: #febe37;
+        text-align: center;
+    }
+    
+    #Company {
+        font-family: Poppins;
+        font-size: 25px;
+        text-align: left;
+        margin-left: 2vw;
+        color: white;
+        margin-top: 20px;
+    }
+    
+    .Search-Bar {
+        width: 100%;
+        max-width: 470px;
+        background: white;
+        display: flex;
+        align-items: center;
+        border-radius: 50px;
+        margin-left: 2vw;
+        margin-top: 50px;
+    }
+    
+    .Search-Bar input {
+        background: transparent;
+        flex: 1;
+        border: 0;
+        outline: none;
+        padding: 10px 20px;
+        font-size: 20px;
+        font-family: Poppins;
+    }
+    
+    .section-about-box {
+        background-color: #039444;
+    }
+    
+    .home-about-img {
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    
+    .section-about-content {
+        margin-bottom: 2rem;
+    }
+    
+    .about-info p {
+        color: #fff;
+    }
+    
+    .about-info {
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 5px 5px #ffc107c4;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 10%;
+    }
+    
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+    
+    div {
+        display: block;
+        unicode-bidi: isolate;
+    }
+    
+    .section-about-box .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .container-fluid {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .Search-Bar button img {
+        width: 25px;
+    }
+    
+    .section-about-box .row {
+        align-items: stretch;
+    }
+    
+    .no-gutters {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .about-info h2 {
+        color: #fff;
+        font-size: 2.5rem;
+    }
+    
+    .Search-Bar button {
+        border: 0;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background: #febe37;
+        cursor: pointer;
+        transition: 1s;
+    }
+    
+    .wrapper {
+        max-width: 100vw;
+        width: 100%;
+        position: relative;
+        margin-left: 0.25vw;
+        margin-top: 40px;
+    }
+    
+    .wrapper i {
+        top: 50%;
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+        font-size: 20px;
+        position: absolute;
+        text-align: center;
+        line-height: 50px;
+        background: #fff;
+        border-radius: 50%;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+        transform: translateY(-50%);
+        transition: transform 0.1s linear;
+    }
+    
+    .wrapper i:active {
+        transform: translateY(-50%) scale(0.85);
+    }
+    
+    .wrapper i:first-child {
+        left: -22px;
+    }
+    
+    .wrapper i:last-child {
+        right: -22px;
+    }
+    
+    .wrapper .carousel {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: calc((100% / 3) - 12px);
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 16px;
+        border-radius: 8px;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+    }
+    
+    .carousel::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .carousel.no-transition {
+        scroll-behavior: auto;
+    }
+    
+    .carousel.dragging {
+        scroll-snap-type: none;
+        scroll-behavior: auto;
+    }
+    
+    .carousel.dragging .card {
+        cursor: grab;
+        user-select: none;
+    }
+    
+    .carousel :where(.card,
+    .img) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .carousel .card {
+        scroll-snap-align: start;
+        height: 342px;
+        list-style: none;
+        background: #fff;
+        cursor: pointer;
+        padding-bottom: 15px;
+        flex-direction: column;
+        border-radius: 8px;
+    }
+    
+    .carousel .card .img {
+        background: #039444;
+        height: 148px;
+        width: 148px;
+        border-radius: 50%;
+    }
+    
+    .card .img img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #fff;
+    }
+    
+    .carousel .card h2 {
+        font-weight: 500;
+        font-size: 25px;
+        margin: 30px 0 5px;
+        font-family: Poppins;
+    }
+    
+    .carousel .card span {
+        color: #039444;
+        font-size: 12px;
+        text-align: center;
+        font-family: Poppins;
+    }
+    
+    .footer {
+        background-color: #039444;
+        color: #2b2424;
+        padding: 15px 0;
+    }
+    
+    #about-section {
+        margin-top: 80px;
+        padding: 20px;
+        border-radius: 8px;
+    }
+    /* bg Video Styles */
+    
+    .video-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+    }
+    /* Content Styles */
+    
+    #welcome-section {
+        position: relative;
+        text-align: center;
+        padding: 30px 0;
+        color: #ffffff;
+    }
+    
+    #welcome-section .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #videos {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    video {
+        width: 100%;
+        height: auto;
+        max-width: 100vw;
+        max-height: 100vh;
+    }
+    /* Add hover effect to buttons */
+    
+    .btn-primary:hover {
+        background-color: #039444;
+        border-color: #039444;
+    }
+    
+    .btn-success:hover {
+        background-color: #039444;
+        border-color: #039444;
+    }
+    
+    img {
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    img:hover {
+        transform: scale(1.1);
+    }
+    
+    @media screen and (max-width: 576px) {
+        .container {
+            padding: 15px;
+            max-width: 540px;
+        }
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }

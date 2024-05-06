@@ -9,202 +9,231 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
-    <header>
-        <nav class="navbar bg-body-tertiary fixed-top">
-            <div class="container-fluid">
+<header>
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
 
-                <h1>Welcome</h1>
+            <h1>Welcome</h1>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./blog.html">Blog & Community</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./educational-section.html">Learning</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contacting.html">Contacting Platform</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./shop.html">Shop</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./recyclingmap.html">Recycling Map</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blog.html">Blog & Community</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./educational-section.html">Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacting.html">Contacting Platform</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./recyclingmap.html">Recycling Map</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Others
                       </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <form class="d-flex mt-3" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <section id="about-section">
-        <div>
-            <div class=EcoEasy>
-
-                <h1 id=Title> Company Name </h1>
-                <h2 id=Company> Company Description
-                </h2>
-                <form action=" " class="Search-Bar">
-                    <input type="text" placeholder="Find out about environmental issues." name=EcoEasy>
-                    <button type="submit"> </button> </form>
-
-                <div class="wrapper">
-                    <i id="left" class="fa-solid fa-angle-left"></i>
-                    <ul class="carousel">
-                        <li class="card">
-                            <div class="img"><img src="assets/pictures/landfill.jpg" alt="img" draggable="false"></div>
-                            <h2> Landfill Overload</h2>
-                            <span>The accumulation of waste in landfills contributes to the depletion of available land for other purposes and can lead to groundwater contamination and emission of greenhouse gases such as methane, a potent contributor to climate change.</span>
-                        </li>
-                        <li class="card">
-                            <div class="img"><img src="assets/pictures/ResourceDepletion.jpg" alt="img" draggable="false"></div>
-                            <h2> Resource Depletion </h2>
-                            <span>Many materials thrown away as waste are valuable resources that could be recycled or reused. The inefficient management of waste results in the loss of valuable resources and exacerbates the demand for new raw materials, leading to resource depletion and environmental degradation.</span>
-                        </li>
-                        <li class="card">
-                            <div class="img"><img src="assets/pictures/pollution.jpg" alt="img" draggable="false"></div>
-                            <h2> Pollution </h2>
-                            <span>Improperly disposed waste, such as plastic, chemicals, and electronic waste, can contaminate soil, water, and air, leading to pollution that harms ecosystems and endangers wildlife. Plastic waste, in particular, can take hundreds of years to decompose, causing long-term environmental damage.</span>
-                        </li>
-                        <li class="card">
-                            <div class="img"><img src="assets/pictures/health-risk.jpg" alt="img" draggable="false"></div>
-                            <h2>Health Risks</h2>
-                            <span> Improper handling and disposal of waste can pose serious health risks to communities living near waste disposal sites. Exposure to toxins, pathogens, and pollutants from waste can lead to respiratory diseases, infections, and other health problems, particularly in low-income and marginalized populations. </span>
-                        </li>
-                        <li class="card">
-                            <div class="img"><img src="assets/pictures/Marine-Debris.jpg" alt="img" draggable="false"></div>
-                            <h2>Marine Debris</h2>
-                            <span>  Plastic waste, in particular, poses a significant threat to marine ecosystems. Discarded plastics accumulate in oceans, rivers, and coastal areas, harming marine life through ingestion, entanglement, and habitat destruction. Marine debris also affects industries such as fishing and tourism, further exacerbating economic and environmental concerns. </span>
-                        </li>
-                        <li class="card">
-                            <div class="img"><img src="assets/pictures/illegal-dumping.jpg" alt="img" draggable="false"> </div>
-                            <h2>Illegal Dumping</h2>
-                            <span>  Improper disposal practices, including illegal dumping and littering, contribute to environmental degradation and undermine efforts to manage waste effectively. Illegal dumping not only pollutes the environment but also creates eyesores, reduces property values, and imposes cleanup costs on communities. </span>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
                         </li>
                     </ul>
-                    <i id="right" class="fa-solid fa-angle-right"></i>
+
+
+                    <form class="d-flex mt-3" role="search" method="get" action="https://valleyvistaservices.com/">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                 </div>
             </div>
         </div>
-    </section>
+    </nav>
+</header>
 
-    <div class=Introduction>
-        <h2 id=IntroTitle> Text </h2>
-        <h3 id=IntroTitleSmall> Small </h3>
-        <p id=Intro>
-            Description </p>
-        <p id=Content>
-            <p>To effectively address environmental issues, it's crucial to recognize the significant role of waste management in preserving our planet's health and sustainability. Waste management encompasses a range of strategies aimed at minimizing the
-                negative impact of human activities on the environment by:</p>
-            <ul>
-                <li>Reducing waste</li>
-                <li>Reusing materials</li>
-                <li>Recycling waste</li>
-                <li>Properly disposing of waste materials</li>
-            </ul>
-            <p>Transitioning to renewable energy sources is indeed a vital step in preventing environmental issues, but alongside this transition, we must also prioritize waste management initiatives. Creating persuasive campaigns and educational materials
-                can encourage individuals and communities to not only embrace renewable energy but also to adopt responsible waste management practices.</p>
-            <p>Preventing environmental issues requires a multifaceted approach that includes:</p>
-            <ul>
-                <li>Waste reduction</li>
-                <li>Recycling</li>
-            </ul>
-            <p>By reducing the amount of waste we generate and maximizing the reuse and recycling of materials, we can significantly decrease the burden on landfills and minimize pollution. Enforcing stringent environmental regulations is essential to ensure
-                that industries and businesses comply with waste management standards and minimize their environmental footprint. By holding polluters accountable and incentivizing sustainable practices, we can mitigate the adverse effects of industrial
-                waste on ecosystems and human health.</p>
-            <p>Investing in waste reduction technologies and infrastructure can enhance our ability to manage and process waste more efficiently. Advanced recycling facilities, composting systems, and waste-to-energy plants are examples of innovative solutions
-                that can help us minimize waste generation and maximize resource recovery.</p>
-            <p>Educating the public about the importance of waste management and providing practical tips for reducing, reusing, and recycling can empower individuals to make environmentally conscious choices in their daily lives. By raising awareness and
-                fostering a culture of sustainability, we can inspire collective action towards a cleaner and healthier environment.</p>
-            <p>In conclusion, while transitioning to renewable energy is essential for addressing environmental challenges, effective waste management plays an equally critical role in safeguarding our planet's future. By integrating waste reduction and
-                recycling initiatives into broader environmental strategies, we can work towards building a more sustainable and resilient world for generations to come.</p>
-        </p>
+<section id="about-section">
+    <div class=EcoEasy>
+
+        <h1 id=Title> Company Name </h1>
+        <h2 id=Company> Company Description
+        </h2>
+        <form action=" " class="Search-Bar">
+            <input type="text" placeholder="Find out about environmental issues." name=EcoEasy>
+            <button type="submit"> </button>
+        </form>
     </div>
 
 
-    <div class="container">
-        <section>
-            <video controls>
-                <source src="./assets/videos/waste_edu_1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </section>
-    </div>
 
-    <div class="container">
-        <section>
-            <video controls>
-                <source src="./assets/videos/waste2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </section>
+    <div class="wrapper">
+        <i id="left" class="fa-solid fa-angle-left"></i>
+        <ul class="carousel">
+            <li class="card">
+                <div class="img"><img src="assets/pictures/landfill.jpg" alt="img" draggable="false"></div>
+                <h2> Landfill Overload</h2>
+                <span>The accumulation of waste in landfills contributes to the depletion of available land for other purposes and can lead to groundwater contamination and emission of greenhouse gases such as methane, a potent contributor to climate change.</span>
+            </li>
+            <li class="card">
+                <div class="img"><img src="assets/pictures/ResourceDepletion.jpg" alt="img" draggable="false"></div>
+                <h2> Resource Depletion </h2>
+                <span>Many materials thrown away as waste are valuable resources that could be recycled or reused. The inefficient management of waste results in the loss of valuable resources and exacerbates the demand for new raw materials, leading to resource depletion and environmental degradation.</span>
+            </li>
+            <li class="card">
+                <div class="img"><img src="assets/pictures/pollution.jpg" alt="img" draggable="false"></div>
+                <h2> Pollution </h2>
+                <span>Improperly disposed waste, such as plastic, chemicals, and electronic waste, can contaminate soil, water, and air, leading to pollution that harms ecosystems and endangers wildlife. Plastic waste, in particular, can take hundreds of years to decompose, causing long-term environmental damage.</span>
+            </li>
+            <li class="card">
+                <div class="img"><img src="assets/pictures/health-risk.jpg" alt="img" draggable="false"></div>
+                <h2>Health Risks</h2>
+                <span> Improper handling and disposal of waste can pose serious health risks to communities living near waste disposal sites. Exposure to toxins, pathogens, and pollutants from waste can lead to respiratory diseases, infections, and other health problems, particularly in low-income and marginalized populations. </span>
+            </li>
+            <li class="card">
+                <div class="img"><img src="assets/pictures/Marine-Debris.jpg" alt="img" draggable="false"></div>
+                <h2>Marine Debris</h2>
+                <span>  Plastic waste, in particular, poses a significant threat to marine ecosystems. Discarded plastics accumulate in oceans, rivers, and coastal areas, harming marine life through ingestion, entanglement, and habitat destruction. Marine debris also affects industries such as fishing and tourism, further exacerbating economic and environmental concerns. </span>
+            </li>
+            <li class="card">
+                <div class="img"><img src="assets/pictures/illegal-dumping.jpg" alt="img" draggable="false"> </div>
+                <h2>Illegal Dumping</h2>
+                <span>  Improper disposal practices, including illegal dumping and littering, contribute to environmental degradation and undermine efforts to manage waste effectively. Illegal dumping not only pollutes the environment but also creates eyesores, reduces property values, and imposes cleanup costs on communities. </span>
+            </li>
+        </ul>
+        <i id="right" class="fa-solid fa-angle-right"></i>
     </div>
+</section>
 
-    <footer class="footer mt-5">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-md-6">
-                    <h4>About Us</h4>
-                    <p>We are dedicated to creating a sustainable future by managing waste effectively.</p>
-                </div>
-                <div class="col-md-6">
-                    <h4>Connect With Us</h4>
-                    <ul>
-                        <li><a href="#" target="_blank">Facebook</a></li>
-                        <li><a href="#" target="_blank">Twitter</a></li>
-                        <li><a href="#" target="_blank">Instagram</a></li>
-                    </ul>
+<div class=Introduction>
+    <hr>
+    <h2 id=IntroTitle> Text </h2>
+    <p id=Intro>Description </p>
+    <hr>
+    <br>
+</div>
+
+<div class="section-about-box">
+    <div class="container-fluid">
+        <div class="row no-gutters">
+            <div class="col-lg-6">
+                <div class="about-info">
+                    <h2>Our Commitment</h2>
+                    <p>"Focused on improving the quality of life through proper and efficient waste disposal, EnviroClean Services aims to leave a clean and lasting mark. We build and foster relationships through our service, community engagement, and innovative
+                        waste disposal and recycling programs."
+                    </p>
                 </div>
             </div>
-            <div style="text-align: center; margin-top: 20px;">
-                <p>OUR PARTNERS</p>
-                <img src="./assets/pictures/zeallogo.jpg" alt="zealcraftinnovationlogo" style="width: 100px; margin-right: 20px;">
-                <img src="./assets/pictures/makersplace.png" alt="makersplacelogo" style="width: 100px; margin-right: 20px;">
+            <div class="col-lg-6">
+                <div class="home-about-img">
+                    <img src="./assets/pictures/girl-pick.jpg" alt="zealcraftinnovationlogo" style="width: 100%; margin-right: 20px;">
+                </div>
             </div>
-            <hr>
-            <p>&copy; 2024 Waste Management System. All rights reserved.</p>
         </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </div>
+</div>
+
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+        <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <button type="button" class="btn btn-primary">Learn More</button>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <button type="button" class="btn btn-primary">Learn More</button>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                <button type="button" class="btn btn-primary">Learn More</button>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <button type="button" class="btn btn-primary">Learn More</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<footer class="footer mt-5 ">
+    <div class="container text-center ">
+        <div class="row ">
+            <div class="col-md-6 ">
+                <h4>About Us</h4>
+                <p>We are dedicated to creating a sustainable future by managing waste effectively.</p>
+            </div>
+            <div class="col-md-6 ">
+                <h4>Connect With Us</h4>
+                <ul>
+                    <li><a href="# " target="_blank ">Facebook</a></li>
+                    <li><a href="# " target="_blank ">Twitter</a></li>
+                    <li><a href="# " target="_blank ">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 20px; ">
+            <p>OUR PARTNERS</p>
+            <img src="./assets/pictures/zeallogo.jpg " alt="zealcraftinnovationlogo " style="width: 100px; margin-right: 20px; ">
+            <img src="./assets/pictures/makersplace.png " alt="makersplacelogo " style="width: 100px; margin-right: 20px; ">
+        </div>
+        <hr>
+        <p>&copy; 2024 Waste Management System. All rights reserved.</p>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js "></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz " crossorigin="anonymous "></script>
 
 
 
 
-    <script src="./assets/js/index.js"></script>
+<script src="./assets/js/index.js "></script>
+
+</body>
+
+</html>
+<script src="./assets/js/index.js "></script>
 
 </body>
 
