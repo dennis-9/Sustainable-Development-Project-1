@@ -9,7 +9,7 @@
         font-family: "Poppins", sans-serif;
     }
     html{
-        width: 100vw;
+        width: 100dvw;
     }
     body {
         font-family: 'Roboto', "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -17,7 +17,10 @@
         color: #2b2424;
         line-height: 1.5;
         text-align: left;
-        width: 100vw;
+        width: 100dvw;
+    }
+    .main-wrapper{
+        overflow-x: hidden;        
     }
     
     .container {
@@ -98,7 +101,7 @@
     }
     
     .Search-Bar {
-        width: 100%;
+        /* width: 100%; */
         max-width: 470px;
         background: white;
         display: flex;
@@ -109,6 +112,7 @@
     }
     
     .Search-Bar input {
+        overflow-x: hidden;
         background: transparent;
         flex: 1;
         border: 0;
@@ -446,5 +450,19 @@
             padding-left: 15px;
             margin-right: auto;
             margin-left: auto;
+        }
+        .Search-Bar{
+            max-width: 80%;
+        }
+        .Search-Bar input::placeholder{
+            font-size: 0.725em;
+        }
+    }
+    @media screen and (max-width: 340px) {
+        #Title{
+            font-size: 2.25em
+        }
+        #Company{
+            font-size: 1.3em;
         }
     }
